@@ -7,6 +7,7 @@ import dep3 from './assets/dep3.png'
 import dep4 from './assets/dep4.png'
 import mapa from './assets/mapa.png'
 import { useState, useEffect, useRef } from 'react';
+import footerimg from './assets/footerimg.svg'
 
 const images = [dep1, dep2, dep3, dep4]
 
@@ -120,7 +121,10 @@ function App() {
           <input className='input'></input>
 
           <button>Quero saber mais</button>
+        </div>
 
+        <div>
+          <img src={footerimg} alt='' />
         </div>
       </SSection6>
     </>
@@ -310,7 +314,7 @@ const SSection4 = styled.section`
   justify-content: center;
 
   & h1 {
-    margin-top: 75px;
+    margin-top: 55px;
     font-family: 'Ubuntu', sans-serif;
     color: #2A3D56;
     font-size: 45px;
@@ -325,7 +329,7 @@ const SSection5 = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: -180px;
+  margin-bottom: -130px;
 
   & .inner {
     display: flex;
@@ -334,7 +338,7 @@ const SSection5 = styled.section`
   & .item{
     min-height: 200px;
     min-width: 400px;
-    padding: 14px;
+    padding: 5px;
   }
 
   & .item img{
@@ -347,26 +351,25 @@ const SSection5 = styled.section`
   & .carousel {
     cursor: grab;
     overflow: hidden;
-    margin-top: -105px;
+    margin-top: -10px;
   }
 `
 const SSection6 = styled.section`
   background-color: #0D172C;
   display: flex;
-  gap: 65px;
   margin-top: 50px;
-  justify-content: center;
-  
+  height: 632px;
 
   & .container {
     display: flex;
     flex-direction: column;
-    margin-top: 85px;
-    border: 1px solid #0D172C;
+    margin-top: 75px;
     background-color: black;
     padding: 20px;
     margin-bottom: 80px;
-    
+    margin-left: 160px;
+    margin-right: -110px;
+    height: 450px;
   }
 
   & h1 {
@@ -407,5 +410,13 @@ const SSection6 = styled.section`
 
   input {
     height: 30px;
-  }  
+  }
+  
+  img {
+    margin-top: 3px;
+    width: 625px;
+    height: 625px;
+    margin-left: 295px;
+    //border: 1px solid red;
+  } 
 `
